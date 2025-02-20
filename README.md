@@ -1,6 +1,6 @@
 # Projeto-912-A
 
-Este projeto foi desenvolvido com o objetivo de aprofundar o aprendizado sobre o desenvolvimento back-end, com foco nas tecnologias utilizadas no processo de criação e implementação de APIs e bancos de dados.
+Este projeto está sendo desenvolvido com o objetivo de aprofundar o aprendizado sobre o desenvolvimento back-end, com foco nas tecnologias utilizadas no processo de criação e implementação de APIs e bancos de dados.
 
 ## Objetivo
 
