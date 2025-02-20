@@ -4,7 +4,7 @@ Este projeto está sendo desenvolvido com o objetivo de aprofundar o aprendizado
 
 ## Objetivo
 
-O principal objetivo deste projeto é entender e aplicar conceitos fundamentais de desenvolvimento back-end, utilizando as ferramentas modernas da área. A proposta foi sugerida pelo Professor Flávio Mota, do Instituto Federal de Alagoas - Campus Maceió, como parte da matéria de Programação Web II. Durante o desenvolvimento, estão sendo abordados tópicos como criação de APIs RESTful, comunicação com banco de dados e práticas de segurança.
+O principal objetivo deste projeto é entender e aplicar conceitos fundamentais de desenvolvimento back-end, utilizando as ferramentas modernas da área. A proposta foi sugerida pelo Professor **Flávio Mota**, do **Instituto Federal de Alagoas - Campus Maceió**, como parte da matéria de **Programação Web II**. Durante o desenvolvimento, estão sendo abordados tópicos como criação de APIs RESTful, comunicação com banco de dados e práticas de segurança.
 
 ## Tecnologias Utilizadas
 
