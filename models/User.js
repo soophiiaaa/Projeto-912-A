@@ -7,4 +7,4 @@ const User = sequelize.define('User', {
     birthday: DataTypes.DATE,
 })
 
-module.exports = User
+export default User //modelo mais moderno para exportar módulos
