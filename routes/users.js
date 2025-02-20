@@ -1,7 +1,8 @@
 const express = require('express');
-const bcrypt = require('bcrypt');
 const router = express.Router()
 const User = require('../models/User')
+
+//const bcrypt = require('bcrypt');
 
 router.get('/users', async (req, res) => {
     const users = await User.findAll()
