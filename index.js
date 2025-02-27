@@ -1,16 +1,12 @@
-const express = require('express')
-const bodyParser = require('body-parser')
-const userRoutes = require('./routes/users');
+import { express } from 'express'
+import { bodyParser } from 'body-parser'
+import { userRoutes } from './routes/users'
 
 const app = express()
 const port = 3000
 
 app.use(bodyParser.json());
-
-app.use(userRoutes);
-app.use(profileRoutes);
-app.use(authRoutes);
-
+app.use(userRoutes)
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

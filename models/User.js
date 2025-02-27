@@ -1,6 +1,7 @@
 import { Sequelize, DataTypes } from 'sequelize'
+import sequelize from '../config/database'
 
-const sequelize = new Sequelize('sqlite::memory:')
+const sequelize = new Sequelize('')
 
 const User = sequelize.define('User', {
     username: DataTypes.STRING,
