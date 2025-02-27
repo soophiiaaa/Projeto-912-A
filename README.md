@@ -34,3 +34,6 @@ O principal objetivo deste projeto é entender e aplicar conceitos fundamentais 
    ```
 
 Agora, o servidor estará rodando e você poderá acessar a API conforme necessário.
+
+**Observação:**  
+"O código apresenta alguns erros, mas estes estão em estágio de correção e serão solucionados em breve. 🛠️"
