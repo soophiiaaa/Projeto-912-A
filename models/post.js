@@ -1,8 +1,8 @@
 const { DataTypes } = require('sequelize')
 const sequelize = require('../database/database')
+const User = require('./users')
 
-// Definição do modelo User
-const User = sequelize.define('User', {
+const Post = sequelize.define('Post', {
     id: {
         type: DataTypes.INTEGER, //DataTypes -> classe do sequelize que contém todos os tipos disponíveis nele
         autoIncrement: true,
@@ -22,4 +22,8 @@ const User = sequelize.define('User', {
     timestamps: false
 })
 
-module.exports = User
+//relacionamentos
+User.hasMany(Post, { foreignKey: 'userId' })
+Post.belongsTo(User, { foreignKey: 'userId' })
+
+module.exports = Post
