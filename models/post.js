@@ -1,29 +1,27 @@
-const { DataTypes } = require('sequelize')
-const sequelize = require('../database/database')
-const User = require('./users')
+const { DataTypes } = require('sequelize');
+const sequelize = require('../config/database');
+const User = require('./user');
 
 const Post = sequelize.define('Post', {
     id: {
-        type: DataTypes.INTEGER, //DataTypes -> classe do sequelize que contém todos os tipos disponíveis nele
+        type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true
     },
-
-    username: {
+    title: {
         type: DataTypes.STRING,
         allowNull: false
     },
-
-    birthday: {
-        type: DataTypes.DATE,
+    content: {
+        type: DataTypes.STRING,
         allowNull: false
     }
 }, {
     timestamps: false
-})
+});
 
-//relacionamentos
-User.hasMany(Post, { foreignKey: 'userId' })
-Post.belongsTo(User, { foreignKey: 'userId' })
+// Relacionamentos
+User.hasMany(Post, { foreignKey: 'userId' });
+Post.belongsTo(User, { foreignKey: 'userId' });
 
-module.exports = Post
+module.exports = Post;
