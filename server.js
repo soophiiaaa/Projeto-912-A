@@ -1,20 +1,13 @@
-//const bodyParser = require('body-parser');
 const express = require('express');
-const { sequelize, connectDB } = require('./database/database');
-const router = require('./routes/routes.js');
+const bodyParser = require('body-parser');
+const sequelize = require('./config/database');
+const userRoutes = require('./routes/userRoutes');
+const postRoutes = require('./routes/postRoutes');
+
 const app = express();
-
-/**
- * Conecta-se com o banco de dados.
- * Exibe uma mensagem de falha ou sucesso na conexão.
- * @returns {Promisse<void>}
- */
-
-connectDB();
-
-app.use(express.json());
-app.use(router);
-//app.use(bodyParser.json());
+app.use(bodyParser.json());
+app.use(userRoutes);
+app.use(postRoutes);
 
 sequelize.sync().then(() => {
     console.log('Database synced');
